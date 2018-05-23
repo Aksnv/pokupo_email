@@ -1,22 +1,24 @@
-/* Basics */
-
 body {
     Margin: 0;
     padding: 0;
     min-width: 100%;
     background-color: #ffffff;
 }
+
 table {
     border-spacing: 0;
-    font-family: sans-serif;
+    font-family: "Arial", sans-serif;
     color: #333333;
 }
+
 td {
     padding: 0;
 }
+
 img {
     border: 0;
 }
+
 .wrapper {
     width: 100%;
     table-layout: fixed;
@@ -24,6 +26,7 @@ img {
     -ms-text-size-adjust: 100%;
     /* background-color: #ffffff; */
 }
+
 .webkit {
     max-width: 600px;
 }
@@ -42,31 +45,32 @@ img {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.full-width-image {
-    position: relative;
-}
-
 .full-width-image img {
     width: 100%;
     height: auto;
 }
 
-
 .inner {
-    padding: 10px;
+    padding: 20px;
 }
+
 p {
+    font-size: 14px;
     Margin: 0;
 }
+
 a {
-    color: #ee6a56;
-    text-decoration: underline;
+    color: #177a93;
+    text-decoration: none;
 }
+
 .h1 {
-    font-size: 21px;
+    font-size: 25px;
     font-weight: bold;
     Margin-bottom: 18px;
+    color: #000000;
 }
+
 .h2 {
     font-size: 18px;
     font-weight: bold;
@@ -78,8 +82,8 @@ a {
 .one-column .contents {
     text-align: left;
 }
+
 .one-column p {
-    font-size: 14px;
     Margin-bottom: 10px;
 }
 
@@ -105,63 +109,94 @@ a {
     font-size: 14px;
     text-align: left;
 }
+
+.two-column .image {
+    height: 76px;
+}
+
+/* .two-column td {
+    padding: 10px;
+} */
+
 .two-column img {
-    width: 100%;
-    /* width: auto; */
+    /* width: 100%; */
+    width: auto; 
     height: auto;
 }
+
 .two-column .text {
     padding-top: 10px;
+}
+
+.two-column .promo {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /*Three column layout*/
 
 .three-column {
-    text-align: center;
+    /* text-align: center; */
     font-size: 0;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .three-column .column {
     width: 100%;
     max-width: 200px;
     display: inline-block;
     vertical-align: top;
 }
+
 .three-column .contents {
     font-size: 14px;
-    text-align: center;
+    /* text-align: center; */
 }
+
 .three-column img {
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
     height: auto;
 }
+
 .three-column .text {
     padding-top: 10px;
+}
+
+.three-column .promo {
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* Left sidebar layout */
 
 .left-sidebar {
-    text-align: center;
+    /* text-align: center; */
     font-size: 0;
 }
+
 .left-sidebar .column {
     width: 100%;
     display: inline-block;
     vertical-align: middle;
 }
+
 .left-sidebar .left {
-    max-width: 100px;
+    max-width: 361px;
 }
+
 .left-sidebar .right {
-    max-width: 500px;
+    max-width: 239px;
 }
 
 .left-sidebar .contents {
     font-size: 14px;
-    text-align: center;
+    /* text-align: center; */
 }
+
 .left-sidebar a {
     color: #85ab70;
 }
@@ -169,19 +204,23 @@ a {
 /*Media Queries*/
 
 @media screen and (max-width: 400px) {
+
     .two-column .column,
     .three-column .column {
         max-width: 100% !important;
     }
+
     .three-column img {
         max-width: 50% !important;
     }
 }
 
 @media screen and (min-width: 401px) and (max-width: 620px) {
+
     .three-column .column {
         max-width: 33% !important;
     }
+
     .two-column .column {
         max-width: 50% !important;
     }
@@ -189,13 +228,16 @@ a {
 
 /* Header */
 
+/* .one-column {
+    background-image: url(../images/bg/bg_top.png);
+} */
+
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 0;
+    float: left;
     width: 220px;
     height: 88px;
-    background-image: url(../images/bg/bg_logo.png);
+    background-image: url(../images/bg/bg_logo.png); 
+    /* background-image: url(https://gracious-almeida-eaf155.netlify.com/images/logo/logo.png); */
 }
 
 .logo a {
@@ -212,9 +254,7 @@ a {
 }
 
 .social {
-    position: absolute;
-    top: 47px;
-    right: 26px;
+    float: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
