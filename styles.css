@@ -7,7 +7,7 @@ body {
 }
 table {
     border-spacing: 0;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
     color: #333333;
 }
 td {
@@ -99,4 +99,39 @@ a {
 }
 .social li:last-child {
     margin-right: 0;
+}
+
+/* Main content */
+.inner {
+    padding: 20px;
+}
+p {
+    Margin: 0;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #177a93;
+}
+.h2 {
+    font-weight: bold;
+    color: #000000;
+}
+.one-column .contents {
+    text-align: left;
+}
+.one-column .h2 {
+    font-size: 25px;
+    line-height: 29px;
+    Margin-bottom: 22px;
 } 
+.one-column p {
+    font-size: 14px;
+    line-height: 19px;
+    Margin-bottom: 0;
+}
+
+/* Invitation */
+.one-column--invitation {
+    padding-top: 20px;
+}
