@@ -25,6 +25,17 @@ img {
 .webkit {
     max-width: 600px;
 }
+::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 9px
+}
+::-webkit-scrollbar-track {
+    background: #fff
+}
+::-webkit-scrollbar-thumb {
+    color: #ffa800;
+    background: #ffa800
+}
  
 /* Windows Phone Viewport Fix */
 @-ms-viewport { 
@@ -33,7 +44,7 @@ img {
 
 .outer {
     Margin: 0 auto;
-    width: 100%; /* можно поменять на 95% для автоматических отступов по бокам на мобильных устройствах */
+    width: 100%;
     max-width: 600px;
 }
 
@@ -51,33 +62,62 @@ ul {
 } */
 
 /* One column layout */
-/* .inner {
-    padding: 10px;
+.inner {
+    padding: 20px;
 }
 p {
     Margin: 0;
 }
 a {
-    color: #ee6a56;
-    text-decoration: underline;
-}
-.h1 {
-    font-size: 21px;
     font-weight: bold;
-    Margin-bottom: 18px;
+    text-decoration: none;
+    color: #177a93;
 }
 .h2 {
-    font-size: 18px;
     font-weight: bold;
-    Margin-bottom: 12px;
+    color: #000000;
 }
 .one-column .contents {
     text-align: left;
 }
+.one-column .h2 {
+    font-size: 25px;
+    line-height: 29px;
+    Margin-bottom: 0;
+} 
 .one-column p {
     font-size: 14px;
-    Margin-bottom: 10px;
-} */
+    line-height: 19px;
+    Margin-bottom: 0;
+}
+
+/*Two column layout*/
+.two-column {
+    text-align: left;
+    font-size: 0;
+}
+.two-column .column {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.contents {
+    width: 100%;
+}
+.two-column .contents {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+}
+.two-column img {
+    /* width: 100%; */
+    width: auto;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 24px;
+} 
 
 /* Header */
 .header {
@@ -101,37 +141,23 @@ a {
     margin-right: 0;
 }
 
-/* Main content */
-.inner {
-    padding: 20px;
-}
-p {
-    Margin: 0;
-}
-a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #177a93;
-}
-.h2 {
-    font-weight: bold;
-    color: #000000;
-}
-.one-column .contents {
-    text-align: left;
-}
-.one-column .h2 {
-    font-size: 25px;
-    line-height: 29px;
-    Margin-bottom: 22px;
-} 
-.one-column p {
-    font-size: 14px;
-    line-height: 19px;
-    Margin-bottom: 0;
-}
-
 /* Invitation */
 .one-column--invitation {
     padding-top: 20px;
+    padding-bottom: 32px;
+}
+.one-column--invitation .h2 {
+    Margin-bottom: 22px;
+}
+
+/* Bonuses */
+.one-column--bonuses .inner {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.two-column--bonuses .icon {
+    height: 76px;
+}
+.two-column--bonuses strong {
+    text-transform: uppercase;
 }
