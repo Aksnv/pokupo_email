@@ -91,7 +91,7 @@ a {
     Margin-bottom: 0;
 }
 
-/*Two column layout*/
+/*Two columns layout*/
 .two-column {
     text-align: left;
     font-size: 0;
@@ -117,7 +117,34 @@ a {
 }
 .two-column .text {
     padding-top: 24px;
-} 
+}
+
+/*Three columns layout*/
+.three-column {
+    text-align: left;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    font-size: 14px;
+    line-height: 19px;
+    text-align: left;
+}
+.three-column img {
+    /* width: 100%; */
+    width: auto;
+    height: auto;
+}
+.three-column .text {
+    padding-top: 24px;
+}
 
 /* Header */
 .header {
@@ -159,5 +186,22 @@ a {
     height: 76px;
 }
 .two-column--bonuses strong {
+    text-transform: uppercase;
+}
+
+/* Expectation */
+.one-column--expectation {
+    padding-top: 10px;
+}
+.one-column--expectation .inner {
+    padding-bottom: 0;
+}
+.three-column--expectation {
+    padding-top: 0;
+}
+.three-column--expectation .icon {
+    height: 74px;
+}
+.three-column--expectation strong {
     text-transform: uppercase;
 }
