@@ -183,6 +183,7 @@ a[href^=tel] {
 .header {
     height: 130px;
     background-image: linear-gradient(to right, #f38642 0%, #f7a034 100%);
+    background-color: #f7a034;
 }
 .logo {
     float: left;
