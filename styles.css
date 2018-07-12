@@ -252,3 +252,23 @@ a {
 .one-column--cases span {
     text-transform: uppercase;
 }
+
+/* Benefits */
+.one-column--benefits {
+  padding-top: 34px;  
+}
+.two-column--benefits .icon {
+    height: 74px;
+}
+.two-column--benefits .text {
+    padding-top: 35px;
+}
+.two-column--benefits strong {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    padding-bottom: 22px;
+}
+.two-column--benefits li {
+    padding-bottom: 12px;
+}
