@@ -162,10 +162,10 @@ a {
 .social li {
     display: inline-block;
     vertical-align: top;
-    margin-right: 5px;
+    Margin-right: 5px;
 }
 .social li:last-child {
-    margin-right: 0;
+    Margin-right: 0;
 }
 
 /* Invitation */
@@ -228,4 +228,27 @@ a {
 }
 .two-column--statistics .inner {
     padding-right: 0;
+}
+
+/* Cases */
+.one-column--cases-header {
+    padding-top: 16px;
+    padding-bottom: 5px;
+}
+.one-column--cases {
+    padding-top: 6px;
+    background-color: #efece7;
+    border-bottom: 3px solid #ffffff;
+}
+.one-column--cases p {
+    Margin-bottom: 22px;
+}
+.one-column--cases p:last-child {
+    Margin-bottom: 6px;
+}
+.one-column--cases a {
+    font-size: 18px;
+}
+.one-column--cases span {
+    text-transform: uppercase;
 }
