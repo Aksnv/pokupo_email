@@ -56,10 +56,14 @@ ul {
 }
 
 /* Full width image */
-/* .full-width-image img {
+.full-width-image {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.full-width-image img {
     width: 100%;
     height: auto;
-}  */
+}  
 
 /* One column layout */
 .inner {
@@ -271,4 +275,18 @@ a {
 }
 .two-column--benefits li {
     padding-bottom: 12px;
+}
+
+/* Connection */
+.one-column--connection .contents {
+    text-align: center;
+}
+.one-column--connection .text {
+    padding-top: 15px;
+}
+.one-column--connection p {
+    line-height: 20px;
+}
+.one-column--connection strong {
+    text-transform: uppercase;
 }
