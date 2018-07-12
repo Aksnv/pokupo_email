@@ -390,6 +390,7 @@ a[href^=tel] {
 .one-column--footer li {
     display: inline-block;
     vertical-align: top;
+    font-size: 12px;
     Margin-left: 0;
     padding-right: 5px;
     padding-bottom: 10px;
