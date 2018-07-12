@@ -177,7 +177,8 @@ a[href^=tel] {
 /* Header */
 .one-column--header {
     height: 5px;
-    background-image: url(../images/bg/bg_top.png); 
+    /* background-image: url(../images/bg/bg_top.png); */
+    background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_top.png); 
 }
 .header {
     height: 130px;
