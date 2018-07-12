@@ -361,6 +361,7 @@ a[href^=tel] {
     padding-top: 20px;
 }
 .left-sidebar--contacts .right .contact {
+    font-size: 14px;
     padding-bottom: 5px;
 }
 .left-sidebar--contacts .right b,
