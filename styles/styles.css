@@ -175,11 +175,14 @@ a[href^=tel] {
 }
 
 /* Header */
-.header {
-    height: 135px;
+.one-column--header {
+    height: 5px;
     /* background-image: url(../images/bg/bg_top.png); */
     background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_top.png);
-    background-color: #f7a034;
+}
+.header {
+    height: 130px;
+    background-image: linear-gradient(to right, #f38642 0%, #f7a034 100%);
 }
 .logo {
     float: left;
