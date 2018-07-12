@@ -164,7 +164,7 @@ a {
     max-width: 180px;
 }
 .left-sidebar .right {
-    max-width: 400px;
+    max-width: 380px;
 }
 .left-sidebar .contents {
     font-size: 14px;
@@ -296,6 +296,7 @@ a {
 }
 .two-column--benefits li {
     padding-bottom: 12px;
+    Margin-left: 0;
 }
 
 /* Connection */
@@ -340,6 +341,7 @@ a {
 }
 .left-sidebar--contacts .right {
     padding-top: 10px;
+    padding-left: 20px;
 }
 .left-sidebar--contacts .right p {
     font-size: 12px;
@@ -386,6 +388,7 @@ a {
     padding-bottom: 10px;
 }
 .one-column--footer a {
+    font-size: 12px;
     text-decoration: underline;
 }
 .one-column--footer .links {
