@@ -150,6 +150,25 @@ a {
     padding-top: 24px;
 }
 
+/* Left sidebar layout */
+.left-sidebar {
+    font-size: 0;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-sidebar .left {
+    max-width: 180px;
+}
+.left-sidebar .right {
+    max-width: 400px;
+}
+.left-sidebar .contents {
+    font-size: 14px;
+}
+
 /* Header */
 .header {
     height: 135px;
@@ -289,4 +308,49 @@ a {
 }
 .one-column--connection strong {
     text-transform: uppercase;
+}
+
+/* Price */
+.one-column--price {
+    padding-top: 12px;
+    padding-bottom: 35px;
+}
+
+.one-column--price .h2 {
+    Margin-bottom: 10px;
+}
+
+/* Contacts */
+.one-column--contacts {
+    height: 5px;
+    background-image: url(images/bg/bg_bottom.png); 
+}
+.left-sidebar--contacts {
+  background-color: #efece7; 
+}
+.left-sidebar--contacts .left {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.left-sidebar--contacts .right {
+    padding-top: 10px;
+}
+.left-sidebar--contacts .right p {
+    font-size: 12px;
+    line-height: 20px;
+}
+.left-sidebar--contacts .right strong {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.left-sidebar--contacts .right ul {
+    padding-top: 20px;
+}
+.left-sidebar--contacts .right li {
+    padding-bottom: 5px;
+}
+.left-sidebar--contacts .right b {
+    color: #000000;
 }
