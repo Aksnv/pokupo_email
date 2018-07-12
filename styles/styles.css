@@ -165,10 +165,10 @@ a[href^=tel] {
     vertical-align: middle;
 }
 .left-sidebar .left {
-    max-width: 180px;
+    max-width: 200px;
 }
 .left-sidebar .right {
-    max-width: 380px;
+    max-width: 360px;
 }
 .left-sidebar .contents {
     font-size: 14px;
@@ -179,6 +179,7 @@ a[href^=tel] {
     height: 135px;
     /* background-image: url(../images/bg/bg_top.png); */
     background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_top.png);
+    background-color: #f7a034;
 }
 .logo {
     float: left;
@@ -342,10 +343,10 @@ a[href^=tel] {
 .left-sidebar--contacts .left {
     padding-top: 10px;
     padding-left: 20px;
+    padding-right: 20px;
 }
 .left-sidebar--contacts .right {
     padding-top: 10px;
-    padding-left: 20px;
 }
 .left-sidebar--contacts .right p {
     font-size: 12px;
