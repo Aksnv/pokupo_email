@@ -78,6 +78,10 @@ a {
     text-decoration: none;
     color: #177a93;
 }
+a[href^=tel] {
+  text-decoration: none;
+  color: #000000;
+}
 .h2 {
     font-weight: bold;
     color: #000000;
@@ -188,6 +192,7 @@ a {
     display: inline-block;
     vertical-align: top;
     Margin-right: 5px;
+    Margin-left: 0;
 }
 .social li:last-child {
     Margin-right: 0;
@@ -359,7 +364,8 @@ a {
 .left-sidebar--contacts .right li {
     padding-bottom: 5px;
 }
-.left-sidebar--contacts .right b {
+.left-sidebar--contacts .right b,
+.left-sidebar--contacts .right a.phone {
     color: #000000;
 }
 
@@ -384,6 +390,7 @@ a {
 .one-column--footer li {
     display: inline-block;
     vertical-align: top;
+    Margin-left: 0;
     padding-right: 5px;
     padding-bottom: 10px;
 }
