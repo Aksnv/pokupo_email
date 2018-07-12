@@ -299,9 +299,8 @@ a[href^=tel] {
     text-transform: uppercase;
     padding-bottom: 22px;
 }
-.two-column--benefits li {
+.two-column--benefits .benefit {
     padding-bottom: 12px;
-    Margin-left: 0;
 }
 
 /* Connection */
@@ -358,10 +357,10 @@ a[href^=tel] {
     font-size: 20px;
     padding-bottom: 5px;
 }
-.left-sidebar--contacts .right ul {
+.left-sidebar--contacts .right .contact--email {
     padding-top: 20px;
 }
-.left-sidebar--contacts .right li {
+.left-sidebar--contacts .right .contact {
     padding-bottom: 5px;
 }
 .left-sidebar--contacts .right b,
