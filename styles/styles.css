@@ -101,6 +101,13 @@ img {
   vertical-align: top;
 }
 
+.three-column--contacts .column {
+  width: 100%;
+  max-width: 160px;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .left-sidebar {
   text-align: center;
   font-size: 0;
