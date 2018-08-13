@@ -7,7 +7,7 @@
   <title></title>
   <style type="text/css">
     @-ms-viewport { 
-        width: device-width; 
+      width: device-width; 
     }
 
     body {
@@ -63,8 +63,16 @@
       background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_header_top.png); 
     }
 
+    .header-top--grey {
+      background-image: none;
+    }
+
     .header-bottom {
       background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_header_bottom.png); 
+    }
+
+    .header-bottom--grey {
+      background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_header_bottom_grey.png);
     }
 
     .header-logo a {
@@ -77,40 +85,47 @@
     }
 
     .two-column .column {
-        width: 100%;
-        max-width: 250px;
-        display: inline-block;
-        vertical-align: top;
+      width: 100%;
+      max-width: 250px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .two-column--promo .column {
+      width: 100%;
+      max-width: 270px;
+      display: inline-block;
+      vertical-align: top;
     }
 
     .three-column {
-        text-align: left;
-        font-size: 0;
+      text-align: left;
+      font-size: 0;
     }
     .three-column .column {
-        width: 100%;
-        max-width: 180px;
-        display: inline-block;
-        vertical-align: top;
+      width: 100%;
+      max-width: 180px;
+      display: inline-block;
+      vertical-align: top;
     }
 
     .left-sidebar {
-        text-align: center;
-        font-size: 0;
+      text-align: center;
+      font-size: 0;
     }
 
     .left-sidebar .column {
-        width: 100%;
-        display: inline-block;
-        vertical-align: top;
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
     }
 
     .left-sidebar--diagrams .left {
-        max-width: 370px;
+      max-width: 370px;
     }
 
     .left-sidebar--diagrams .right {
-        max-width: 170px;
+      max-width: 170px;
     }
 
     .contacts-top {
@@ -118,11 +133,19 @@
     }
 
     .left-sidebar--contacts .left {
-        max-width: 180px;
+      max-width: 180px;
     }
 
     .left-sidebar--contacts .right {
-        max-width: 360px;
+      max-width: 360px;
+    }
+
+    .left-sidebar--advantages .left {
+      max-width: 165px;
+    }
+
+    .left-sidebar--advantages .right {
+      max-width: 375px;
     }
 
     @media only screen and (min-width: 600px) {
@@ -130,6 +153,7 @@
         width: 600px!important;
       }
     }
+
     @media only screen and (max-device-width: 600px),
            only screen and (max-width: 600px) {
       table[class="container"] {
