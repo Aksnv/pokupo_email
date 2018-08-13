@@ -1,1139 +1,1133 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <style type="text/css">
-        
-body {
-    Margin: 0;
-    padding: 0;
-    min-width: 100%;
-    background-color: #ffffff;
-}
-table {
-    border-spacing: 0;
-    font-family: Arial, sans-serif;
-    color: #333333;
-}
-td {
-    padding: 0;
-}
-img {
-    border: 0;
-}
-.wrapper {
-    width: 100%;
-    table-layout: fixed;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-}
-.webkit {
-    max-width: 600px;
-}
-::-webkit-scrollbar {
-    width: 4px;
-    padding-right: 9px
-}
-::-webkit-scrollbar-track {
-    background: #fff
-}
-::-webkit-scrollbar-thumb {
-    color: #ffa800;
-    background: #ffa800
-}
- 
-
-@-ms-viewport { 
-    width: device-width; 
-}
-
-.outer {
-    Margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-
-ul {
-    Margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-
-.full-width-image {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.full-width-image img {
-    width: 100%;
-    height: auto;
-}  
-
-
-.inner {
-    padding: 20px 10px;
-}
-p {
-    Margin: 0;
-}
-a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #177a93;
-}
-a[href^=tel] {
-  text-decoration: none;
-  color: #000000;
-}
-.h2 {
-    font-weight: bold;
-    color: #000000;
-}
-.one-column .contents {
-    text-align: left;
-}
-.one-column .h2 {
-    font-size: 25px;
-    line-height: 29px;
-    Margin-bottom: 0;
-} 
-.one-column p {
-    font-size: 14px;
-    line-height: 19px;
-    Margin-bottom: 0;
-}
-
-
-.two-column {
-    text-align: left;
-    font-size: 0;
-}
-.two-column .column {
-    width: 100%;
-    max-width: 300px;
-    display: inline-block;
-    vertical-align: top;
-}
-.contents {
-    width: 100%;
-}
-.two-column .contents {
-    font-size: 14px;
-    line-height: 19px;
-    text-align: left;
-}
-.two-column img {
-    
-    width: auto;
-    height: auto;
-}
-.two-column .text {
-    padding-top: 24px;
-}
-
-
-.three-column {
-    text-align: left;
-    font-size: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.three-column .column {
-    width: 100%;
-    max-width: 200px;
-    display: inline-block;
-    vertical-align: top;
-}
-.three-column .contents {
-    font-size: 14px;
-    line-height: 19px;
-    text-align: left;
-}
-.three-column img {
-    
-    width: auto;
-    height: auto;
-}
-.three-column .text {
-    padding-top: 24px;
-}
-
-
-.left-sidebar {
-    font-size: 0;
-}
-.left-sidebar .column {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-}
-.left-sidebar .left {
-    max-width: 200px;
-}
-.left-sidebar .right {
-    max-width: 360px;
-}
-.left-sidebar .contents {
-    font-size: 14px;
-}
-
-
-.one-column--header {
-    height: 5px;
-    
-    background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_top.png); 
-}
-.header {
-    height: 130px;
-    background-image: linear-gradient(to right, #f38642 0%, #f7a034 100%);
-    background-color: #f7a034;
-}
-.logo {
-    float: left;
-}
-.social {
-    float: right;
-    padding-top: 18px;
-    padding-right: 12px;
-}
-.social li {
-    display: inline-block;
-    vertical-align: top;
-    Margin-right: 5px;
-    Margin-left: 0;
-}
-.social li:last-child {
-    Margin-right: 0;
-}
-
-
-.one-column--invitation {
-    padding-top: 20px;
-    padding-bottom: 32px;
-}
-.one-column--invitation .h2 {
-    Margin-bottom: 22px;
-}
-
-
-.one-column--bonuses .inner {
-    padding-top: 0;
-    padding-bottom: 0;
-}
-.two-column--bonuses .icon {
-    height: 76px;
-}
-.two-column--bonuses strong {
-    text-transform: uppercase;
-}
-
-
-.one-column--expectation {
-    padding-top: 10px;
-}
-.one-column--expectation .inner {
-    padding-bottom: 0;
-}
-.three-column--expectation {
-    padding-top: 0;
-}
-.three-column--expectation .icon {
-    height: 74px;
-}
-.three-column--expectation strong {
-    text-transform: uppercase;
-}
-
-
-.two-column--statistics .text {
-    font-size: 10px;
-    line-height: 16px;
-    text-transform: uppercase;
-    padding-top: 0;
-}
-.two-column--statistics .text > p:first-child {
-    padding-left: 25px;
-}
-.two-column--statistics em {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 46px;
-    font-weight: 700;
-    font-style: normal;
-    line-height: 46px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.two-column--statistics .inner {
-    padding-right: 0;
-}
-
-
-.one-column--cases-header {
-    padding-top: 16px;
-    padding-bottom: 5px;
-}
-.one-column--cases {
-    padding-top: 6px;
-    background-color: #efece7;
-    border-bottom: 3px solid #ffffff;
-}
-.one-column--cases p {
-    Margin-bottom: 22px;
-}
-.one-column--cases p:last-child {
-    Margin-bottom: 6px;
-}
-.one-column--cases a {
-    font-size: 18px;
-}
-.one-column--cases span {
-    text-transform: uppercase;
-}
-
-
-.one-column--benefits {
-  padding-top: 34px;  
-}
-.two-column--benefits .icon {
-    height: 74px;
-}
-.two-column--benefits .text {
-    padding-top: 35px;
-}
-.two-column--benefits strong {
-    display: inline-block;
-    vertical-align: top;
-    text-transform: uppercase;
-    padding-bottom: 22px;
-}
-.two-column--benefits .benefit {
-    padding-bottom: 12px;
-}
-
-
-.one-column--connection .contents {
-    text-align: center;
-}
-.one-column--connection .text {
-    padding-top: 15px;
-}
-.one-column--connection p {
-    line-height: 20px;
-}
-.one-column--connection strong {
-    text-transform: uppercase;
-}
-
-
-.one-column--price {
-    padding-top: 12px;
-    padding-bottom: 35px;
-}
-
-.one-column--price .h2 {
-    Margin-bottom: 10px;
-}
-
-
-.one-column--contacts {
-    height: 5px;
-    
-    background-image: url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_bottom.png); 
-}
-.left-sidebar--contacts {
-  background-color: #efece7;
-  border-bottom: 3px solid #ceccc7;
-  -webkit-box-shadow: 0 3px 5px #a2a2a2;
-  box-shadow: 0 5px 5px #a2a2a2;
-}
-.left-sidebar--contacts .left {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.left-sidebar--contacts .right {
-    padding-top: 10px;
-}
-.left-sidebar--contacts .right p {
-    font-size: 12px;
-    line-height: 20px;
-}
-.left-sidebar--contacts .right strong {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 20px;
-    padding-bottom: 5px;
-}
-.left-sidebar--contacts .right .contact--email {
-    padding-top: 20px;
-}
-.left-sidebar--contacts .right .contact {
-    font-size: 14px;
-    padding-bottom: 5px;
-}
-.left-sidebar--contacts .right b,
-.left-sidebar--contacts .right a.phone {
-    color: #000000;
-}
-
-
-.one-column--footer {
-    padding-top: 20px;
-}
-.one-column--footer,
-.one-column--footer p {
-    font-size: 12px;
-}
-.one-column--footer img {
-    float: left;
-    padding-right: 20px;
-}
-.one-column--footer strong {
-    color: #000000;
-}
-.one-column--footer ul {
-    padding-top: 10px;
-}
-.one-column--footer li {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 12px;
-    Margin-left: 0;
-    padding-right: 5px;
-    padding-bottom: 10px;
-}
-.one-column--footer a {
-    font-size: 12px;
-    text-decoration: underline;
-}
-.one-column--footer .links {
-    padding-top: 0;
-}
-
-
-@media screen and (max-width: 400px) {
-    .two-column .column,
-    .three-column .column {
-        max-width: 100% !important;
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style type="text/css">
+    @-ms-viewport { 
+        width: device-width; 
     }
-    .three-column img {
-        max-width: 50% !important;
+
+    body {
+      Margin: 0;
+      padding: 0;
+      min-width: 100%;
+      background-color: #ffffff;
     }
-}
-@media screen and (min-width: 401px) and (max-width: 620px) {
-    .three-column .column {
-        max-width: 33% !important;
+
+    table {
+      Margin: 0;
+      padding: 0;
     }
+
+    img {
+      display: block;
+      border: 0;
+    }
+
+    .wrapper {
+      -moz-text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333333; 
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      min-width: 320px;
+      Margin: 0 auto;
+    }
+
+    .h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 25px;
+      font-weight:700;
+      line-height: 30px;
+      color: #000000;
+    }
+
+    .inline-link {
+      font-weight: 700;
+      color: #177a93;
+    }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
+
+    .header-top {
+      background-image: url(https://wonderful-mccarthy-7ed5d2.netlify.com/images/bg/bg_header_top.png); 
+    }
+
+    .header-bottom {
+      background-image: url(https://wonderful-mccarthy-7ed5d2.netlify.com/images/bg/bg_header_bottom.png); 
+    }
+
+    .header-logo a {
+      text-decoration: none;
+    }
+
+    .two-column {
+      text-align: left;
+      font-size: 0;
+    }
+
     .two-column .column {
-        max-width: 50% !important;
+        width: 100%;
+        max-width: 250px;
+        display: inline-block;
+        vertical-align: top;
     }
-}
-    </style>
-    <!--[if (gte mso 9)|(IE)]>
-    <style type="text/css">
-        table {border-collapse: collapse !important;}
-    </style>
-    <![endif]-->
+
+    .three-column {
+        text-align: left;
+        font-size: 0;
+    }
+    .three-column .column {
+        width: 100%;
+        max-width: 180px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .left-sidebar {
+        text-align: center;
+        font-size: 0;
+    }
+
+    .left-sidebar .column {
+        width: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .left-sidebar--diagrams .left {
+        max-width: 370px;
+    }
+
+    .left-sidebar--diagrams .right {
+        max-width: 170px;
+    }
+
+    .contacts-top {
+      background-image: url(../images/bg/bg_contacts_top.png); 
+    }
+
+    .left-sidebar--contacts .left {
+        max-width: 180px;
+    }
+
+    .left-sidebar--contacts .right {
+        max-width: 360px;
+    }
+
+    @media only screen and (min-width: 600px) {
+      .container {
+        width: 600px!important;
+      }
+    }
+    @media only screen and (max-device-width: 600px),
+           only screen and (max-width: 600px) {
+      table[class="container"] {
+        width: 100%!important;
+      }
+    }
+  </style>
+  <!--[if (gte mso 9)|(IE)]>
+  <style type="text/css">
+    table {border-collapse: collapse !important;}
+  </style>
+  <![endif]-->
 </head>
 <body style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;min-width:100%;background-color:#ffffff;" >
-    <center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;" >
-        <div class="webkit" style="max-width:600px;" >
-            <!--[if (gte mso 9)|(IE)]>
-            <table width="600" align="center" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
+  <table class="wrapper" width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;-moz-text-size-adjust:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;font-family:Arial, Helvetica, sans-serif;color:#333333;" >
+      <tr>
+        <td align="center" bgcolor="#ffffff">
+          <!--[if (gte mso 9)|(IE)]>
+          <table width="600" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" ><tr><td>
+          <![endif]-->
+          <table class="container" width="100%" border="0" cellpadding="0" cellspacing="0" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;width:100%;max-width:600px;min-width:320px;Margin:0 auto;" >
+            
+            <!-- Pre-header -->
+            <!--[if !mso]><!-->
+            <span style="display:none!important;font-size:0;color:transparent;width:0;height:0;max-width:0;max-height:0;opacity:0;overflow:hidden;mso-hide:all;visibility:hidden;">Приглашаем<br> к сотрудничеству успешных<br> предпринимателей. Pokupo.ru &mdash; мощная и&nbsp;гибкая платформа для организации интернет торговли. Pokupo.ru &mdash; сообщество предпринимателей для взаимовыгодного развития на&nbsp;основе&nbsp;IT технологий, профессионализма и&nbsp;открытости.</span>
+            <!--<![endif]-->
+            <!-- /Pre-header -->
+
+            <!-- Header -->
             <tr>
-            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-            <![endif]-->
-            <table class="outer" align="center" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;box-shadow:0 4px 8px rgba(0, 0, 0, 0.3);" >
-                <tr>
-                    <td class="one-column" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="header" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;height:130px;background-image:linear-gradient(to right, #f38642 0%, #f7a034 100%);background-color: #f7a034;" >
-                                    <div class="logo" style="float:left;" >
-                                        <!-- <img src="../../images/logo/logo_full_sm.png" width="112" height="62" alt="" style="border-width:0;" > -->
-                                        <img src="https://gracious-almeida-eaf155.netlify.com/images/logo/logo_full_sm.png" width="112" height="62" alt="" style="border-width:0;" >
-                                    </div>
-                                    <div class="social" style="float:right;padding-top:18px;padding-right:12px;" >
-                                        <ul style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;list-style-type:none;" >
-                                            <!-- <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="../../images/social/yt_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="../../images/social/lj_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="../../images/social/vk_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="../../images/social/tw_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="../../images/social/hh_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li> -->
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="https://gracious-almeida-eaf155.netlify.com/images/social/yt_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="https://gracious-almeida-eaf155.netlify.com/images/social/lj_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="https://gracious-almeida-eaf155.netlify.com/images/social/vk_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="https://gracious-almeida-eaf155.netlify.com/images/social/tw_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            <li style="display:inline-block;vertical-align:top;Margin-right:5px;Margin-left:0;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" ><img src="https://gracious-almeida-eaf155.netlify.com/images/social/hh_sm.png" width="26" height="26" alt="" style="border-width:0;" ></a></li>
-                                            
-                                        </ul>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--header" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;height:5px;background-image:url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_top.png);" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" ></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--invitation" style="padding-right:0;padding-left:0;padding-top:20px;padding-bottom:32px;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p class="h2" style="Margin:0;font-weight:bold;color:#000000;font-size:25px;line-height:29px;Margin-bottom:22px;" >Приглашаем<br> к сотрудничеству успешных<br> предпринимателей</p>
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:0;" ><a href="https://pokupo.ru/" style="font-weight:bold;text-decoration:none;color:#177a93;" >Pokupo.ru</a> — мощная и гибкая платформа для организации интернет торговли.</p>
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:0;" ><a href="https://pokupo.ru/" style="font-weight:bold;text-decoration:none;color:#177a93;" >Pokupo.ru</a> — сообщество предпринимателей для взаимовыгодного развития на&nbsp;основе IT технологий, профессионализма и открытости.</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--bonuses" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-right:10px;padding-left:10px;width:100%;text-align:left;padding-top:0;padding-bottom:0;" >
-                                    <p class="h2" style="Margin:0;font-weight:bold;color:#000000;font-size:25px;line-height:29px;Margin-bottom:0;" >Вы получите:</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="two-column two-column--bonuses" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
-                        <!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
+              <td class="header">
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                  <tr>
+                    <td class="header-top" align="center" height="131" bgcolor="#f7a034" style="background-image:url(https://wonderful-mccarthy-7ed5d2.netlify.com/images/bg/bg_header_top.png);" >
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
                         <tr>
-                        <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon" style="height:76px;" >
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- <img src="../../images/icons/icon_1.png" width="176" height="34" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_1.png" width="176" height="34" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                    <p style="Margin:0;" ><strong style="text-transform:uppercase;" >с дохода платформы</strong><br> от привлечённых клиентов</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
+                          <td class="header-logo" width="112" height="62" align="left" valign="middle">
+                            <a href="https://pokupo.ru/" target="_blank" style="text-decoration:none;" >
+                              <img width="112" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/logo/logo_header.png" alt="&nbsp;Pokupo.ru" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#ffffff;border-width:0;" >
+                            </a>
+                          </td>
+                          <td class="header-social" align="right" valign="middle">
+                            <table border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td width="26">
+                                  <a href="#" target="_blank">
+                                    <img width="26" height="26" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/social/yt.png" alt="&nbsp;yt" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#ffffff;border-width:0;" >
+                                  </a>
+                                </td>
+                                <td width="9"></td>
+                                <td width="26">
+                                  <a href="#" target="_blank">
+                                    <img width="26" height="26" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/social/lj.png" alt="&nbsp;lj" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#ffffff;border-width:0;" >
+                                  </a>
+                                </td>
+                                <td width="9"></td>
+                                <td width="26">
+                                  <a href="https://pokupo.#" target="_blank">
+                                    <img width="26" height="26" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/social/vk.png" alt="&nbsp;vk" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#ffffff;border-width:0;" >
+                                  </a>
+                                </td>
+                                <td width="9"></td>
+                                <td width="26">
+                                  <a href="https://pokupo.#" target="_blank">
+                                    <img width="26" height="26" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/social/tw.png" alt="&nbsp;tw" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#ffffff;border-width:0;" >
+                                  </a>
+                                </td>
+                                <td width="9"></td>
+                                <td width="26">
+                                  <a href="https://pokupo.#" target="_blank">
+                                    <img width="26" height="26" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/social/hh.png" alt="&nbsp;hh" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#ffffff;border-width:0;" >
+                                  </a>
+                                </td>
+                                <td width="20"></td>
+                              </tr>
                             </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon" style="height:76px;" >
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- img src="../../images/icons/icon_2.png" width="72" height="76" alt=""> -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_2.png" width="72" height="76" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                    <p style="Margin:0;" ><strong style="text-transform:uppercase;" >продвижение ваших проектов</strong><br> силами платформы и сообщества</p> 
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
+                          </td>
                         </tr>
-                        </table>
-                        <![endif]-->
+                      </table>
                     </td>
-                </tr>
-                <tr>
-                    <td class="two-column two-column--bonuses" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
-                        <!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                        <tr>
-                        <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon" style="height:76px;" >
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- <img src="../../images/icons/icon_3.png" width="64" height="74" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_3.png" width="64" height="74" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                    <p style="Margin:0;" ><strong style="text-transform:uppercase;" >предмет для оказания</strong><br> разнообразных аутсорсинговых<br> <strong style="text-transform:uppercase;" >услуг</strong></p> 
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon" style="height:76px;" >
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- <img src="../../images/icons/icon_4.png" width="69" height="74" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_4.png" width="69" height="74" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                    <p style="Margin:0;" ><strong style="text-transform:uppercase;" >инструмент для создания</strong><br> собственного торгового портала —<br> <strong style="text-transform:uppercase;" >маркетплейса</strong></p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--expectation" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:10px;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;padding-bottom:0;" >
-                                    <p class="h2" style="Margin:0;font-weight:bold;color:#000000;font-size:25px;line-height:29px;Margin-bottom:0;" >Мы ждем от Вас:</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="three-column three-column--expectation" style="padding-right:0;padding-left:0;text-align:left;font-size:0;padding-bottom:10px;padding-top:0;" >
-                        <!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                        <tr>
-                        <td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                    <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                                        <tr class="icon" style="height:74px;" >
-                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                <!-- <img src="../../images/icons/icon_5.png" width="68" height="74" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_5.png" width="68" height="74" alt="" style="border-width:0;width:auto;height:auto;" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                <p style="Margin:0;" >Привлечение<br> <strong style="text-transform:uppercase;" >новых продавцов</strong><br> в регионе</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                    <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                                        <tr class="icon" style="height:74px;" >
-                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                <!-- <img src="../../images/icons/icon_6.png" width="74" height="69" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_6.png" width="74" height="69" alt="" style="border-width:0;width:auto;height:auto;" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                <p style="Margin:0;" >Привлечение<br> <strong style="text-transform:uppercase;" >новых партнеров</strong><br> для сотрудничества<br> и совместных проектов</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                    <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                                        <tr class="icon" style="height:74px;" >
-                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                <!-- <img src="../../images/icons/icon_7.png" width="73" height="73" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_7.png" width="73" height="73" alt="" style="border-width:0;width:auto;height:auto;" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                <p style="Margin:0;" >Проведение<br> <strong style="text-transform:uppercase;" >рекламных<br> компаний и акций</strong><br> в регионе</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        <tr>
-                        <td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                    <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                                        <tr class="icon" style="height:74px;" >
-                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                <!-- <img src="../../images/icons/icon_8.png" width="69" height="69" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_8.png" width="69" height="69" alt="" style="border-width:0;width:auto;height:auto;" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                <p style="Margin:0;" ><strong style="text-transform:uppercase;" >открытие офиса</strong><br> представительства</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                    <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                                        <tr class="icon" style="height:74px;" >
-                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                <!-- <img src="../../images/icons/icon_9.png" width="69" height="74" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_9.png" width="69" height="74" alt="" style="border-width:0;width:auto;height:auto;" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                <p style="Margin:0;" ><strong style="text-transform:uppercase;" >проведение обучающих</strong><br> семинаров, курсов</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="200" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                    <table class="column" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;max-width:200px;display:inline-block;vertical-align:top;" >
-                                        <tr class="icon" style="height:74px;" >
-                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                <!-- <img src="../../images/icons/icon_10.png" width="54" height="74" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_10.png" width="54" height="74" alt="" style="border-width:0;width:auto;height:auto;" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:24px;" >
-                                                <p style="Margin:0;" >Приветствуются<br> <strong style="text-transform:uppercase;" >свои идеи<br> для развития</strong></p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--statistics" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p class="h2" style="Margin:0;font-weight:bold;color:#000000;font-size:25px;line-height:29px;Margin-bottom:0;" >Что есть на сегодня:</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="two-column two-column--statistics" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
-                        <!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                        <tr>
-                        <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:0;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon">
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- <img src="../../images/diagrams/diagram_1.png" width="281" height="181" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/diagrams/diagram_1.png" width="281" height="181" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:0;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;font-size:10px;line-height:16px;text-transform:uppercase;padding-top:0;" >
-                                                    <p style="Margin:0;" >за 4 месяца<br> <strong>количество заказов<br> увеличилось</strong></p>
-                                                    <p style="Margin:0;" >на <em style="display:inline-block;vertical-align:top;font-size:46px;font-weight:700;font-style:normal;line-height:46px;padding-left:5px;padding-right:5px;" >14%</em></p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-                    </td>
-                </tr>
-                <tr>
-                    <td class="two-column two-column--statistics" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
-                        <!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                        <tr>
-                        <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:0;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon">
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- <img src="../../images/diagrams/diagram_2.png" width="278" height="171" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/diagrams/diagram_2.png" width="278" height="171" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-left:10px;padding-right:0;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;font-size:10px;line-height:16px;text-transform:uppercase;padding-top:0;" >
-                                                    <p style="Margin:0;" >за 1 год<br> <strong>обороты компании<br> выросли</strong></p>
-                                                    <p style="Margin:0;" >от <em style="display:inline-block;vertical-align:top;font-size:46px;font-weight:700;font-style:normal;line-height:46px;padding-left:5px;padding-right:5px;" >7.3</em><br> до <em style="display:inline-block;vertical-align:top;font-size:46px;font-weight:700;font-style:normal;line-height:46px;padding-left:5px;padding-right:5px;" >11.5</em> млн.руб</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--cases-header" style="padding-right:0;padding-left:0;padding-top:16px;padding-bottom:5px;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p class="h2" style="Margin:0;font-weight:bold;color:#000000;font-size:25px;line-height:29px;Margin-bottom:0;" >Бизнес кейсы Pokupo</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--cases" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:6px;background-color:#efece7;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#ffffff;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:22px;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;font-size:18px;" >infoskills.ru</a><br> Маркетплейс товаров для развития</p>
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:22px;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;font-size:18px;" >svetlanaf.pokupo.ru</a><br> Семена коллекционных томатов от Светланы</p>
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:22px;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;font-size:18px;" >jam.pokupo.ru</a><br> С использованием темы оформления</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--cases" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:6px;background-color:#efece7;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#ffffff;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:22px;" ><span style="text-transform:uppercase;" >Интеграция магазина в сайт</span><br> <a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;font-size:18px;" >my-vengria.ru</a><br> Все о жизни в Венгрии из первых уст</p>
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:22px;" ><span style="text-transform:uppercase;" >Использование виджета для приема оплаты</span><br> <a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;font-size:18px;" >shltest.com</a><br> Центр SHL тестирования</p>
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:22px;" ><span style="text-transform:uppercase;" >Использование API или модуля интеграции с CMS</span><br> <a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;font-size:18px;" >shedevriki.ru</a><br> Магазин шедевров и шедевриков</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--cases" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:6px;background-color:#efece7;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#ffffff;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:22px;" ><span style="text-transform:uppercase;" ><a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;font-size:18px;" >Каталог проектов</a></span></p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--benefits" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:34px;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p class="h2" style="Margin:0;font-weight:bold;color:#000000;font-size:25px;line-height:29px;Margin-bottom:0;" >Что получат Ваши<br> будущие клиенты с Pokupo:</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="two-column two-column--benefits" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:left;font-size:0;" >
-                        <!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                        <tr>
-                        <td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon" style="height:74px;" >
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- <img src="../../images/icons/icon_11.png" width="74" height="74" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_11.png" width="74" height="74" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:35px;" >
-                                                    <p style="Margin:0;" ><strong style="display:inline-block;vertical-align:top;text-transform:uppercase;padding-bottom:22px;" >Готовое решение для<br> бизнеса в интернете:</strong></p>
-                                                    <p class="benefit" style="Margin:0;padding-bottom:12px;" >– количество магазинов<br> и товаров не ограничено;</p>
-                                                    <p class="benefit" style="Margin:0;padding-bottom:12px;" >– <b>более 30 способов приема<br> платежей</b> (банковские карты,<br> мобильные платежи,<br> криптовалюта и др.);</p>
-                                                    <p class="benefit" style="Margin:0;padding-bottom:12px;" >– система автоматической<br> доставки цифровых<br> товаров покупателю;</p>
-                                                    <p class="benefit" style="Margin:0;padding-bottom:12px;" >– встроенная онлайн-касса<br> для предпринимателей<br> либо возможность<br> подключения собственной;</p>
-                                                    <p class="benefit" style="Margin:0;padding-bottom:12px;" >– сервис для создания<br> лендинга.</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="50%" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;" >
-                            <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                                <tr>
-                                    <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;" >
-                                        <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;font-size:14px;line-height:19px;text-align:left;" >
-                                            <tr class="icon" style="height:74px;" >
-                                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                    <!-- <img src="../../images/icons/icon_12.png" width="75" height="74" alt="" style="border-width:0;width:auto;height:auto;" > -->
-                                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_12.png" width="75" height="74" alt="" style="border-width:0;width:auto;height:auto;" >
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:35px;" >
-                                                    <p style="Margin:0;" ><strong style="display:inline-block;vertical-align:top;text-transform:uppercase;padding-bottom:22px;" >Рекламную<br> и информационную</strong></p>
-                                                    <p style="Margin:0;" >поддержку со стороны платформы<br> в виде публикаций в новостных каналах,<br> в каталоге магазинов и пр.</p>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-                    </td>
-                </tr>
-                <tr>
-                    <td class="full-width-image" style="padding-top:0;padding-bottom:0;padding-left:10px;padding-right:10px;" >
-                        <!-- <img src="../../images/bg/bg_middle.png" alt="" style="border-width:0;width:100%;height:auto;" > -->
-                        <img src="https://gracious-almeida-eaf155.netlify.com/images/bg/bg_middle.png" alt="" style="border-width:0;width:100%;height:auto;" >
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--connection" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:center;" >
-                                    <table class="contents" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;text-align:center;" >
-                                        <tr class="icon">
-                                            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                                                <!-- <img src="../../images/icons/icon_13.png" width="98" height="74" alt="" style="border-width:0;" > -->
-                                                <img src="https://gracious-almeida-eaf155.netlify.com/images/icons/icon_13.png" width="98" height="74" alt="" style="border-width:0;" >
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:15px;" >
-                                                <p style="Margin:0;font-size:14px;Margin-bottom:0;line-height:20px;" ><strong style="text-transform:uppercase;" >Все подключается<br> одним кликом</strong></p>
-                                                <p style="Margin:0;font-size:14px;Margin-bottom:0;line-height:20px;" >В Личном кабинете.<br> Без регистраций<br> в других сервисах<br> и заключения<br> сторонних договоров</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--price" style="padding-right:0;padding-left:0;padding-top:12px;padding-bottom:35px;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;" >
-                                    <p class="h2" style="Margin:0;font-weight:bold;color:#000000;font-size:25px;line-height:29px;Margin-bottom:10px;" >За сколько? &mdash; 10&nbsp;минут и 0 рублей</p>
-                                    <p style="Margin:0;font-size:14px;line-height:19px;Margin-bottom:0;" >Подробнее о тарифах на сайте <a href="https://pokupo.ru/" style="font-weight:bold;text-decoration:none;color:#177a93;" >Pokupo.ru</a></p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--contacts" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;height:5px;background-image:url(https://gracious-almeida-eaf155.netlify.com/images/bg/bg_bottom.png);" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" ></td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="left-sidebar left-sidebar--contacts" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;font-size:0;background-color:#efece7;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#ceccc7;-webkit-box-shadow:0 3px 5px #a2a2a2;box-shadow:0 5px 5px #a2a2a2;" >
-                        <!--[if (gte mso 9)|(IE)]>
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                        <tr>
-                        <td width="240" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column left" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;display:inline-block;vertical-align:middle;max-width:200px;padding-top:10px;padding-left:20px;padding-right:20px;" >
-                            <tr>
-                                <td class="inner" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;" >
-                                    <!-- <img src="../../images/photo/photo_1.png" width="160" height="160" alt="" style="border-width:0;" > -->
-                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/photo/photo_1.png" width="160" height="160" alt="" style="border-width:0;" >
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td><td width="360" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
-                        <![endif]-->
-                        <table class="column right" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;width:100%;display:inline-block;vertical-align:middle;max-width:360px;padding-top:10px;" >
-                            <tr>
-                                <td class="inner contents" style="padding-top:20px;padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;font-size:14px;" >
-                                    <p style="Margin:0;font-size:12px;line-height:20px;" ><strong style="display:inline-block;vertical-align:top;font-size:20px;padding-bottom:5px;" >С уважением, Аниса&nbsp;Курамшина</strong></p>
-                                    <p style="Margin:0;font-size:12px;line-height:20px;" >Региональный координатор торговой<br> платформы Pokupo</p>
-                                    <p class="contact contact--email" style="Margin:0;line-height:20px;padding-top:20px;font-size:14px;padding-bottom:5px;" >e-mail: <a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" >pokupo.service@gmail.com</a></p>
-                                    <p class="contact" style="Margin:0;line-height:20px;font-size:14px;padding-bottom:5px;" >skype: <a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" >anisa.kuramshina@mail.ru</a></p>
-                                    <p class="contact" style="Margin:0;line-height:20px;font-size:14px;padding-bottom:5px;" >telegram: <a href="#" style="font-weight:bold;text-decoration:none;color:#177a93;" >@Anisa_Kuramshina</a></p>
-                                    <p class="contact" style="Margin:0;line-height:20px;font-size:14px;padding-bottom:5px;" >телефон: <b style="color:#000000;" ><a class="phone" href="tel:+79174448804" style="font-weight:bold;text-decoration:none;color:#000000;" >8 917 444-8804</a> (8.00-17.00 мск)</b></p>
-                                </td>
-                            </tr>
-                        </table>
-                        <!--[if (gte mso 9)|(IE)]>
-                        </td>
-                        </tr>
-                        </table>
-                        <![endif]-->
-                    </td>
-                </tr>
-                <tr>
-                    <td class="one-column one-column--footer" style="padding-bottom:0;padding-right:0;padding-left:0;padding-top:20px;font-size:12px;" >
-                        <table width="100%" style="border-spacing:0;font-family:Arial, sans-serif;color:#333333;" >
-                            <tr>
-                                <td class="inner contents links" style="padding-bottom:20px;padding-right:10px;padding-left:10px;width:100%;text-align:left;padding-top:0;" >
-                                    <!-- <img src="../../images/logo/logo_footer.png" width="69" height="35" alt="" style="border-width:0;float:left;padding-right:20px;" > -->
-                                    <img src="https://gracious-almeida-eaf155.netlify.com/images/logo/logo_footer.png" width="69" height="35" alt="" style="border-width:0;float:left;padding-right:20px;" >
-                                    <p style="Margin:0;line-height:19px;Margin-bottom:0;font-size:12px;" >Торговая платформа полного цикла <strong style="color:#000000;" >Pokupo</strong> &copy;&nbsp;2018</p>
-                                    <ul style="Margin:0;padding-bottom:0;padding-right:0;padding-left:0;list-style-type:none;padding-top:10px;" >
-                                        <li style="display:inline-block;vertical-align:top;font-size:12px;Margin-left:0;padding-right:5px;padding-bottom:10px;" ><a href="https://pokupo.ru/" style="font-weight:bold;color:#177a93;font-size:12px;text-decoration:underline;" >Pokupo.ru</a></li>
-                                        <li style="display:inline-block;vertical-align:top;font-size:12px;Margin-left:0;padding-right:5px;padding-bottom:10px;" ><a href="#" style="font-weight:bold;color:#177a93;font-size:12px;text-decoration:underline;" >Служба поддежки</a></li>
-                                        <li style="display:inline-block;vertical-align:top;font-size:12px;Margin-left:0;padding-right:5px;padding-bottom:10px;" ><a href="#" style="font-weight:bold;color:#177a93;font-size:12px;text-decoration:underline;" >База знаний</a></li>
-                                        <li style="display:inline-block;vertical-align:top;font-size:12px;Margin-left:0;padding-right:5px;padding-bottom:10px;" >Skype-поддержка: <a href="#" style="font-weight:bold;color:#177a93;font-size:12px;text-decoration:underline;" >pokupo.ru</a></li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <!--[if (gte mso 9)|(IE)]>
-            </td>
+                  </tr>
+                  <tr>
+                    <td class="header-bottom" align="center" height="4" bgcolor="#ffffff" style="background-image:url(https://wonderful-mccarthy-7ed5d2.netlify.com/images/bg/bg_header_bottom.png);" ></td>
+                  </tr>
+                </table>
+              </td>
             </tr>
-            </table>
-            <![endif]-->
-        </div>
-    </center>
+            <!-- /Header -->
+            
+            <!-- Content -->
+            <tr>
+              <td align="center">
+                <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                  <tr>
+                    <td height="37" bgcolor="#ffffff"></td>
+                  </tr>
+                  <tr>
+                    <td class="h2" align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;line-height:30px;color:#000000;" >
+                      Приглашаем<br> к сотрудничеству успешных<br> предпринимателей
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="20" bgcolor="#ffffff"></td>
+                  </tr>
+                  <tr>
+                    <td align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                      <a class="inline-link" href="https://pokupo.ru/" target="_blank" style="text-decoration:none;font-weight:700;color:#177a93;" >Pokupo.ru</a> &mdash; мощная и&nbsp;гибкая платформа для организации интернет торговли.<br>
+                      <a class="inline-link" href="https://pokupo.ru/" target="_blank" style="text-decoration:none;font-weight:700;color:#177a93;" >Pokupo.ru</a> &mdash; сообщество предпринимателей для взаимовыгодного развития на&nbsp;основе&nbsp;IT технологий, профессионализма и&nbsp;открытости.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="50" bgcolor="#ffffff"></td>
+                  </tr>
+                  <tr>
+                    <td class="h2" align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;line-height:30px;color:#000000;" >
+                      Вы получите:
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="25" bgcolor="#ffffff"></td>
+                  </tr>
+                  <tr>
+                    <td class="two-column" style="text-align:left;font-size:0;" >
+                      <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                      <td width="50%" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:250px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="176" height="34" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_1.png" alt="&nbsp;image_1" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >с&nbsp;дохода платформы</span><br> от&nbsp;привлеченных клиентов
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:250px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="72" height="76" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_2.png" alt="&nbsp;image_2" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >продвижение ваших проектов</span><br> силами платформы и&nbsp;сообщества
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="two-column" style="text-align:left;font-size:0;" >
+                      <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                      <td width="50%" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:250px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="64" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_3.png" alt="&nbsp;image_3" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >предмет для оказания</span><br> разнообразных аутсорсинговых<br> <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >услуг</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="50%" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:250px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="69" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_4.png" alt="&nbsp;image_4" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >инструмент для создания</span><br> собственного торгового портала&nbsp;&mdash;<br> <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >маркетплейса</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="h2" align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;line-height:30px;color:#000000;" >
+                      Мы ждем от Вас:
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="20" bgcolor="#ffffff"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="three-column" style="text-align:left;font-size:0;" >
+                      <!--[if (gte mso 9)|(IE)]>
+                      <table width="100%" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                      <td width="180" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="68" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_5.png" alt="&nbsp;image_5" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  Привлечение<br> <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >новых продавцов</span><br> в&nbsp;регионе
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="180" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="74" height="69" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_6.png" alt="&nbsp;image_6" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  Привлечение<br> <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >новых партнеров</span><br> для сотрудничества<br> и&nbsp;совместных проектов
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="180" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="73" height="73" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_7.png" alt="&nbsp;image_7" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  Проведение<br> <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >рекламных<br> компаний и&nbsp;акций</span><br> в&nbsp;регионе
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      <tr>
+                      <td width="180" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="69" height="69" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_8.png" alt="&nbsp;image_8" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >открытие офиса</span><br> представительства
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="180" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="69" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_9.png" alt="&nbsp;image_9" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >проведение обучающих</span><br> семинаров, курсов
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td><td width="180" valign="top">
+                      <![endif]-->
+                      <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                        <tr>
+                          <td align="left">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                              <tr>
+                                <td height="76" valign="middle">
+                                  <img width="54" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_10.png" alt="&nbsp;image_10" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" bgcolor="#ffffff"></td>
+                              </tr>
+                              <tr>
+                                <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                  Приветствуются<br> <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >свои идеи<br> для развития</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="50" bgcolor="#ffffff"></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                      <![endif]-->
+                    </td>
+                </tr>
+                <tr>
+                  <td class="h2" align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;line-height:30px;color:#000000;" >
+                    Что есть на сегодня:
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td class="left-sidebar" style="text-align:left;font-size:0;" >
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <tr>
+                    <td width="370">
+                    <![endif]-->
+                    <table class="column left" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:370px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td>
+                          <img src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/diagrams/diagram_1.png" width="100%" alt="&nbsp;Количество заказов в месяц" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td><td width="170">
+                    <![endif]-->
+                    <table class="column right" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:170px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td valign="middle" align="left">
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <tr>
+                              <td height="30" bgcolor="#ffffff"></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td width="25"></td>
+                              <td colspan="2" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;text-transform:uppercase;" >
+                                за 4 месяца<br> <b>количество заказов<br> увеличилось</b>
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td height="10" bgcolor="#ffffff"></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td width="25" valign="top" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;text-transform:uppercase;" >
+                                на
+                              </td>
+                              <td width="95" style="font-family:Arial,Helvetica,sans-serif;font-size:46px;font-weight:700;line-height:46px;color:#000000;" >
+                                14%
+                              </td>
+                              <td></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td height="30" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td class="left-sidebar left-sidebar--diagrams" style="text-align:left;font-size:0;" >
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <tr>
+                    <td width="370">
+                    <![endif]-->
+                    <table class="column left" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:370px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td>
+                          <img src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/diagrams/diagram_2.png" width="100%" alt="&nbsp;Обороты компании" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td><td width="170">
+                    <![endif]-->
+                    <table class="column right" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:170px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td valign="middle" align="left">
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <tr>
+                              <td height="30" bgcolor="#ffffff"></td>
+                              <td></td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td width="25"></td>
+                              <td colspan="2" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;text-transform:uppercase;" >
+                                за 1 год<br> <b>обороты компании<br> выросли</b>
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td height="10" bgcolor="#ffffff"></td>
+                            </tr>
+                            <tr>
+                              <td width="25" valign="top" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;text-transform:uppercase;" >
+                                от
+                              </td>
+                              <td width="95" style="font-family:Arial,Helvetica,sans-serif;font-size:46px;font-weight:700;line-height:46px;color:#000000;" >
+                                7.3
+                              </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td width="25" valign="top" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;text-transform:uppercase;" >
+                                до
+                              </td>
+                              <td width="95" style="font-family:Arial,Helvetica,sans-serif;font-size:46px;font-weight:700;line-height:46px;color:#000000;" >
+                                11.5
+                              </td>
+                              <td valign="top" style="font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;text-transform:uppercase;" >
+                                млн<br> руб
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                  </td>
+                </tr>
+                <tr>
+                  <td height="55" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td class="h2" align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;line-height:30px;color:#000000;" >
+                    Бизнес-кейсы Pokupo
+                  </td>
+                </tr>
+                <tr>
+                  <td height="25" bgcolor="#ffffff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-bottom-color:#ffffff;border-bottom-style:solid;border-bottom-width:3px;" >
+                <tr>
+                  <td align="center" bgcolor="#efece7">
+                    <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td height="25" bgcolor="#efece7"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <a class="inline-link" href="#" target="_blank" style="font-size:18px;text-decoration:none;font-weight:700;color:#177a93;" >Infoskills.ru</a><br> Маркетплейс товаров для развития
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#efece7"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <a class="inline-link" href="#" target="_blank" style="font-size:18px;text-decoration:none;font-weight:700;color:#177a93;" >svetlanaf.pokupo.ru</a><br> Семена коллекционных томатов от Светланы
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#efece7"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <a class="inline-link" href="#" target="_blank" style="font-size:18px;text-decoration:none;font-weight:700;color:#177a93;" >jam.pokupo.ru</a><br> С использованием темы оформления
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="25" bgcolor="#efece7"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-bottom-color:#ffffff;border-bottom-style:solid;border-bottom-width:3px;" >
+                <tr>
+                  <td align="center" bgcolor="#efece7">
+                    <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td height="25" bgcolor="#efece7"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <span class="uppercase" style="text-transform:uppercase;" >Интеграция магазина в сайт</span><br>
+                          <a class="inline-link" href="#" target="_blank" style="font-size:18px;text-decoration:none;font-weight:700;color:#177a93;" >my-vengria.ru</a><br> Все о жизни в Венгрии из первых уст
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#efece7"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <span class="uppercase" style="text-transform:uppercase;" >Использование виджета для приема оплаты</span><br>
+                          <a class="inline-link" href="#" target="_blank" style="font-size:18px;text-decoration:none;font-weight:700;color:#177a93;" >shltest.com</a><br> Центр SHL тестирования 24/7
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#efece7"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <span class="uppercase" style="text-transform:uppercase;" >Использование API или модуля интеграции с CMS</span><br>
+                          <a class="inline-link" href="#" target="_blank" style="font-size:18px;text-decoration:none;font-weight:700;color:#177a93;" >shedevriki.ru</a><br> Магазин шедевров и шедевриков
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="25" bgcolor="#efece7"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-bottom-color:#ffffff;" >
+                <tr>
+                  <td align="center" bgcolor="#efece7">
+                    <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td height="25" bgcolor="#efece7"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <a class="inline-link" href="#" target="_blank" style="font-size:18px;text-decoration:none;font-weight:700;color:#177a93;text-transform:uppercase;" >Каталог проектов</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="25" bgcolor="#efece7"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <tr>
+                  <td height="50" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td class="h2" align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;line-height:30px;color:#000000;" >
+                    Что получат Ваши<br> будущие клиенты с&nbsp;Pokupo:
+                  </td>
+                </tr>
+                <tr>
+                  <td height="40" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td class="two-column" style="text-align:left;font-size:0;" >
+                    <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                    <tr>
+                    <td width="50%" valign="top">
+                    <![endif]-->
+                    <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:250px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td align="left">
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <tr>
+                              <td height="76" valign="middle">
+                                <img width="74" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_11.png" alt="&nbsp;image_11" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="30" bgcolor="#ffffff"></td>
+                            </tr>
+                            <tr>
+                              <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >готовое решение для<br> бизнеса в интернете:</span>
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                                  <tr>
+                                    <td height="20" bgcolor="#ffffff"></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top" width="20">&mdash;</td>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >количество магазинов<br> и&nbsp;товаров не&nbsp;ограничено;</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="10" bgcolor="#ffffff"></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top" width="20">&mdash;</td>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" ><b>более 30&nbsp;способов приема<br> платежей</b> (банковские<br> 
+                                карты, мобильные платежи,<br> криптовалюта и&nbsp;др.);</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="10" bgcolor="#ffffff"></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top" width="20">&mdash;</td>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >система автоматической<br> доставки цифровых<br> товаров покупателю;</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="10" bgcolor="#ffffff"></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top" width="20">&mdash;</td>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >встроенная онлайн-касса<br> для предпринимателей<br> 
+                                либо возможность<br> подключения собственной;</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="10" bgcolor="#ffffff"></td>
+                                  </tr>
+                                  <tr>
+                                    <td valign="top" width="20">&mdash;</td>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >сервис для создания<br> лендинга.</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="40" bgcolor="#ffffff"></td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td><td width="50%" valign="top">
+                    <![endif]-->
+                    <table class="column" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:250px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td align="left">
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <tr>
+                              <td height="76" valign="middle">
+                                <img width="75" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_12.png" alt="&nbsp;image_12" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="30" bgcolor="#ffffff"></td>
+                            </tr>
+                            <tr>
+                              <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >рекламную<br> и информационную</span>
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                                  <tr>
+                                    <td height="20" bgcolor="#ffffff"></td>
+                                  </tr>
+                                  <tr>
+                                    <td style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >поддержку со&nbsp;стороны платформы<br> в&nbsp;виде публикаций в&nbsp;новостных каналах, в&nbsp;каталоге магазинов и&nbsp;пр.</td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!--[if (gte mso 9)|(IE)]>
+                    </td>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="95%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-bottom-color:#ffffff;" >
+                <tr>
+                  <td align="center" bgcolor="#ffffff">
+                    <img width="100%" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/bg/bg_middle.png" alt="" border="0" style="display:block;border-width:0;" >
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td align="center">
+              <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <tr>
+                  <td height="10" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td align="center">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td height="76" valign="middle" align="center">
+                          <img width="98" height="74" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/icons/icon_13.png" alt="&nbsp;image_13" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="15" bgcolor="#ffffff"></td>
+                      </tr>
+                      <tr>
+                        <td align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                          <span class="uppercase" style="font-weight:700;text-transform:uppercase;" >Все подключается<br> одним кликом</span><br> В&nbsp;Личном кабинете.<br> Без регистраций<br> в&nbsp;других сервисах<br> и&nbsp;заключения<br> сторонних договоров
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="50" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td class="h2" align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;line-height:30px;color:#000000;" >
+                    За&nbsp;сколько? &mdash;&nbsp;10&nbsp;минут и&nbsp;0&nbsp;рублей.
+                  </td>
+                </tr>
+                <tr>
+                  <td height="10" bgcolor="#ffffff"></td>
+                </tr>
+                <tr>
+                  <td align="left" bgcolor="#ffffff" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                    Подробнее о&nbsp;тарифах на&nbsp;сайте <a class="inline-link" href="https://pokupo.ru/" target="_blank" style="text-decoration:none;font-weight:700;color:#177a93;" >Pokupo.ru</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="55" bgcolor="#ffffff"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td class="contacts" align="center">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;border-bottom-color:#d4d1cd;border-bottom-style:solid;border-bottom-width:3px;box-shadow:0 4px 8px #b3b3b3;" >
+                <tr>
+                  <td class="contacts-top" align="center" height="4" bgcolor="#ffffff" style="background-image:url(https://wonderful-mccarthy-7ed5d2.netlify.com/images/bg/bg_contacts_top.png);" ></td>
+                </tr>
+                <tr>
+                  <td height="35" bgcolor="#efece7"></td>
+                </tr>
+                <tr>
+                  <td align="center" bgcolor="#efece7">
+                    <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td class="left-sidebar left-sidebar--contacts" style="text-align:left;font-size:0;" >
+                          <!--[if (gte mso 9)|(IE)]>
+                          <table width="100%" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                          <tr>
+                          <td width="180">
+                          <![endif]-->
+                          <table class="column left" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:180px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <tr>
+                              <td align="left">
+                                <img src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/photo/photo_1.png" width="160" height="160" alt="&nbsp;Аниса Курамшина" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#333333;border-width:0;" >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="20" bgcolor="#efece7"></td>
+                            </tr>
+                          </table>
+                          <!--[if (gte mso 9)|(IE)]>
+                          </td><td width="360">
+                          <![endif]-->
+                          <table class="column right" width="100%" border="0" cellpadding="0" cellspacing="0" style="width:100%;max-width:360px;display:inline-block;vertical-align:top;Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                            <tr>
+                              <td align="left" bgcolor="#efece7" style="font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:700;line-height:20px;color:#333333;" >С уважением, Аниса&nbsp;Курамшина
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="5" bgcolor="#efece7"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" bgcolor="#efece7" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:20px;color:#333333;" >Региональный координатор торговой<br> платформы Pokupo
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="20" bgcolor="#efece7"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" bgcolor="#efece7" style="font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:20px;color:#333333;" >
+                                e-mail: <a class="inline-link" href="#" target="_blank" style="text-decoration:none;font-weight:700;color:#177a93;" >pokupo.service@gmail.com</a><br>
+                                skype: <a class="inline-link" href="#" target="_blank" style="text-decoration:none;font-weight:700;color:#177a93;" >anisa.kuramshina@mail.ru</a><br>
+                                telegram: <a class="inline-link" href="#" target="_blank" style="text-decoration:none;font-weight:700;color:#177a93;" >@Anisa_Kuramshina</a><br>
+                                телефон: <a href="tel:89174448804" target="_blank" style="text-decoration:none;font-weight:700;color:#000000;" >8 917 444-8804 (8.00-17.00 мск.)</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="35" bgcolor="#efece7"></td>
+                            </tr>
+                          </table>
+                          <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                          </tr>
+                          </table>
+                          <![endif]-->
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <br>
+            </td>
+          </tr>
+          <!-- /Content -->
+
+          <!-- Footer -->
+          <tr>
+            <td class="footer" align="center">
+              <table width="90%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                <tr>
+                  <td align="left" bgcolor="#ffffff">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="Margin:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+                      <tr>
+                        <td height="10" bgcolor="#ffffff"></td>
+                      </tr>
+                      <tr>
+                        <td class="footer-logo" width="69" height="35" align="left" valign="middle">
+                          <a href="https://pokupo.ru/" target="_blank" style="text-decoration:none;" >
+                            <img width="69" src="https://wonderful-mccarthy-7ed5d2.netlify.com/images/logo/logo.png" alt="&nbsp;Pokupo.ru" border="0" style="display:block;font-family:Arial, Helvetica, sans-serif;font-size:14px;line-height:20px;color:#ffffff;border-width:0;" >
+                          </a>
+                        </td>
+                        <td width="10"></td>
+                        <td align="left" valign="middle" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:20px;color:#333333;" >
+                          Торговая платформа полного цикла <b style="font-weight:700;color:#000000;" >Pokupo</b>&nbsp;&copy;&nbsp;2018
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="15" bgcolor="#ffffff"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:20px;color:#333333;" >
+                          <a class="inline-link" href="https://pokupo.ru/" target="_blank" style="text-decoration:underline;font-weight:700;color:#177a93;" >Pokupo.ru</a><span>&nbsp;&nbsp;&nbsp;</span> 
+                          <a class="inline-link" href="#" target="_blank" style="text-decoration:underline;font-weight:700;color:#177a93;" >Служба поддежки</a><span>&nbsp;&nbsp;&nbsp;</span> 
+                          <a class="inline-link" href="#" target="_blank" style="text-decoration:underline;font-weight:700;color:#177a93;" >База знаний</a><span>&nbsp;&nbsp;&nbsp;</span>
+                          Skype&#8209;поддержка:&nbsp;<a class="inline-link" href="#" target="_blank" style="text-decoration:underline;font-weight:700;color:#177a93;" >pokupo.ru</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="20" bgcolor="#ffffff"></td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- /Footer -->
+
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+        </td></tr></table>
+        <![endif]-->
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
