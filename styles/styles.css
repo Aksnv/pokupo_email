@@ -75,6 +75,13 @@ img {
     vertical-align: top;
 }
 
+.two-column--promo .column {
+    width: 100%;
+    max-width: 270px;
+    display: inline-block;
+    vertical-align: top;
+}
+
 .three-column {
     text-align: left;
     font-size: 0;
